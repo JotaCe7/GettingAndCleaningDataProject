@@ -3,9 +3,9 @@
 
 This repository contains:
 
-* **README.md/README.html** Summary of the project.
+* **README.md** Summary of the project.
 
-* **CodeBook.md/CodeBook.html** This file.
+* **CodeBook.md** This file.
 
 * **rawData.zip** Data obtained from the given link.
 

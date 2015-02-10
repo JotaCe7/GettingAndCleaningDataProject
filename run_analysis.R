@@ -126,5 +126,4 @@ names(finaldata)[-(1:2)] <- nms[-(1:2)]
 
 ##### FINAL STEP #####
 #Create a .txt file with write.table() containing the data
-write.table(finaldata, "./tidydata.txt")
-
+write.table(finaldata, "./tidydata.txt",row.names = FALSE)
