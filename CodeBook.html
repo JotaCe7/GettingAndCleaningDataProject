@@ -65,21 +65,21 @@ img {
 <h1><strong>Getting and Cleaning Data Project Code Book</strong></h1>
 <p>This repository contains:</p>
 <ul>
-<li><p><strong>CodeBook.md/CodeBook.html</strong> This file</p></li>
-<li><p><strong>README.md/README.html</strong> Summary of the project</p></li>
-<li><p><strong>Raw data</strong> Data obtained from the given link.</p>
+<li><p><strong>README.md/README.html</strong> Summary of the project.</p></li>
+<li><p><strong>CodeBook.md/CodeBook.html</strong> This file.</p></li>
+<li><p><strong>rawData.zip</strong> Data obtained from the given link.</p>
 <ul>
-<li><em>X_train.txt</em>: Training set</li>
-<li><em>y_train.txt</em>: Training labels</li>
-<li><em>X_tesy.txt</em>: Test set</li>
-<li><em>y_test.txt</em>: Test labels</li>
+<li><em>X_train.txt</em>: Training set.</li>
+<li><em>y_train.txt</em>: Training labels.</li>
+<li><em>X_tesy.txt</em>: Test set.</li>
+<li><em>y_test.txt</em>: Test labels.</li>
 <li><em>activity_labels.txt</em>: Links the class labels with their activity name.</li>
 <li><em>features.txt</em>: List of all features.</li>
 <li><em>subject_train.txt/subject_test.txt</em>: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.</li>
+<li><em>features_info.txt</em>: Detailed features’ information from the time and frequency domain of the raw data.</li>
 </ul></li>
-<li><p><strong>features_info.txt</strong>: Detailed features’ information from the time and frequency domain of the raw data.</p></li>
 <li><p><strong>run_analysis.R</strong> R script that gets the tidy data from the raw data.</p></li>
-<li><strong>tidydata.txt</strong> The new tidy data created by <em>run_analysis.R</em></li>
+<li><p><strong>tidydata.txt</strong> The new tidy data created by <em>run_analysis.R</em>.</p></li>
 <li><p><strong>tidydata_info.txt</strong> Detailed information about the variables in <em>tidydata.txt</em>.</p></li>
 </ul>
 <div id="source-data" class="section level2">
@@ -102,7 +102,7 @@ img {
 <p>The R script called run_analysis.R does the following.</p>
 <div id="step1-merge-the-training-and-the-test-sets-to-create-one-data-set." class="section level4">
 <h4><strong>STEP1</strong> Merge the training and the test sets to create one data set.</h4>
-<p>Set the working directory Load the raw data into R Applying <em>cbind()</em>, merge the training and test datas.</p>
+<p>Set the working directory. Unzip the raw data into the woorking directory. Load the raw data into R. Applying <em>cbind()</em>, merge the training and test datas.</p>
 </div>
 <div id="step2-extract-only-the-measurements-on-the-mean-and-standard-deviation-for-each-measurement." class="section level4">
 <h4><strong>STEP2</strong> Extract only the measurements on the mean and standard deviation for each measurement.</h4>
@@ -110,7 +110,7 @@ img {
 </div>
 <div id="step3-use-descriptive-activity-names-to-name-the-activities-in-the-data-set" class="section level4">
 <h4><strong>STEP3</strong> Use descriptive activity names to name the activities in the data set</h4>
-<p>Convert the labels fron integer to factor, and change their levels to match the ones given in <em>activity_labels.txt</em></p>
+<p>Convert the labels fron integer to factor, and change their levels to match the ones given in <em>activity_labels.txt</em>.</p>
 </div>
 <div id="step4-appropriately-label-the-data-set-with-descriptive-activity-names." class="section level4">
 <h4><strong>STEP4</strong> Appropriately label the data set with descriptive activity names.</h4>
